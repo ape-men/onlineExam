@@ -24,7 +24,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## 项目结构图
 
-打*的为配置文件，尽量不要修改
+!> 打*的为配置文件，尽量不要修改
+
+```
 ├── /build/           # *CLI的支持文件目录
 ├── /config/          # *CLI配置
 ├── /node_modules/    # *依赖的包
@@ -48,3 +50,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ├── .postcssrc.js     # *postcss配置文件
 ├── package-lock.json # *项目依赖版本号留档
 └── package.json      # *项目依赖的目录
+```
