@@ -13,7 +13,7 @@ module.exports = {
     // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
     'plugin:vue/essential', 
     // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-    'standard'
+    //'standard'
   ],
   // required to lint *.vue files
   plugins: [
@@ -21,19 +21,15 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    "semi": [0, "always"],
-    // eslint-disable-next-line
-    // allow async-await
-    'generator-star-spacing': 'off',
+    "no-trailing-spaces": 1, // 行末无空格
+    'indent': [1, 4],        // 缩进为4个空格
+    "no-undef": 1,           // 无未定义变量
+    "camelcase": 1,          // 强制驼峰命名
+    "no-unused-vars": [1, {"vars": "local", "args": "none"}], // 不能有声明后未被使用的局部变量
+    "key-spacing": [1, {"beforeColon": false, "afterColon": true }], //对象字面量中冒号前无空格，后有
+    "strict": 1,             // 启用严格模式
+    'vue/script-indent': ['error', 4, {'baseIndent': 0}],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'indent': 0,
-    'vue/script-indent': [
-      'error',
-      4,
-      {
-        'baseIndent': 1
-      }
-    ]
   }
 }

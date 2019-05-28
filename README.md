@@ -24,7 +24,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## 项目结构图
 
-!> 打*的为配置文件，尽量不要修改
+> 打*的为配置文件，尽量不要修改
 
 ```
 ├── /build/           # *CLI的支持文件目录

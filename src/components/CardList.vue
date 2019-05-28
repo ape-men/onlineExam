@@ -1,9 +1,9 @@
 <template>
     <div>
         <ul>
-            <component 
-                v-bind:is="currentCard" 
-                v-for="(item, index) in cardInfos[currentCard]" 
+            <component
+                v-bind:is="currentCard"
+                v-for="(item, index) in cardInfos[currentCard]"
                 v-bind:info="item" :key="index"></component>
         </ul>
     </div>
