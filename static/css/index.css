@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #90D7EC;
+}
+
+main {
+    width: 900px;
+    margin: 0 auto;
+}
