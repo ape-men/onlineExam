@@ -41,9 +41,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 │ ├─ /assets/         # 图片资源目录
 │ ├─ /components/     # 组件目录
 │ └─ /router/         # 路由目录
-├── /static/          # 静态资源目录，js和css存放在此处
+├── /static/          # 静态资源目录，js, json和css存放在此处
 ├── .babelrc          # *babel配置文件
-├── .editorconfig     # *可视化地图编辑工具（手机版）
+├── .editorconfig     # *文件编辑配置
 ├── .eslintignore     # *设置eslint略过的文件
 ├── .eslintrc.js      # *eslint配置文件
 ├── .gitignore        # *设置git略过的文件
