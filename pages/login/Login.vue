@@ -2,8 +2,7 @@
 <!-- <el-header >
     <img src="../assets/newlog01.png" width="700px" height="75px">
 </el-header> -->
-<el-main>
-    <el-row>
+    <el-row class="h">
     <el-col :span="6" :offset="9" class="login">
         <div class="grid-content bg-purple-dark">
             <p class="p1">教师/学生端登录</p>
@@ -13,7 +12,7 @@
         <i class="el-icon-question"></i>
         </el-tooltip>
         </p> -->
-            <el-form-item label="学号/教工号" prop="input1">
+            <el-form-item label="用户名" prop="input1">
             <el-input v-model="form.input1" placeholder="请输入账号" @focus="open" prefix-icon="el-icon-user-solid"></el-input>
             </el-form-item>
             <!-- <p>密码 <el-tooltip class="item" effect="light" placement="bottom-end">
@@ -24,13 +23,12 @@
             <el-form-item label="密码" prop="input2">       
             <el-input placeholder="请输入密码" v-model="form.input2" show-password @focus="open2" prefix-icon="el-icon-edit"></el-input>
             </el-form-item>
-            <el-button plain @click="submitForm('form')" >登录</el-button>
+                <a href="https://account.nenu.edu.cn/password/reSet.htm" class="a1">忘记密码</a>
+            <a href="/admin.html"><el-button plain @click="submitForm('form')" >登录</el-button></a>
         </el-form>
-        <el-button type="danger" plain>忘记密码</el-button>
     </div>
     </el-col>
-    </el-row>
-</el-main>
+    </el-row >
 </template>
 
 <script>
@@ -42,7 +40,7 @@ export default {
 
             this.$notify({
             title: '用户名',
-            message: h('i', { style: 'color: teal'}, '登录账号为统一身份认证账号(邮箱)。')
+            message: h('i', { style: 'color: teal'}, '登录账号为统一身份认证账号(邮箱)或者学号。')
             });
         },
         open2() {
@@ -85,33 +83,36 @@ export default {
         };
     }
 }
+
 </script>
 
 <style>
-.el-header{
-    
+a{
+    text-decoration: none;
 }
-.el-main{
+.a1{
+    text-decoration: none;
+    color: gray;
+    line-height: 16px;
+    font-size: 12px;
+}
+/* .a1:hover{
+
+}
+.a1:active{
+    text-decoration: none;
+} */
+.h{
     margin-top:10px;
     padding-top: 100px;
     height: 650px;
-    background: linear-gradient(white,#94d2e5);
+    /* background: linear-gradient(white,#94d2e5); */
+    background:rgba(0, 0, 0, 0);
 }
 .p1{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 24px;
     font-weight: 700;
-}
-.el-footer{
-    border-top:1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(49,169,204,0.5);
-    text-align: center;
-}
-.el-footer p{
-    line-height: 10px;
-    color: white;
-    font-size:16px;
-    font-weight: 500;
 }
 .login{
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
