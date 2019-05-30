@@ -1,8 +1,8 @@
 <template>
-    <el-footer>
+<div class="d1">
         <P>Design by:ape-men（唐佳成，邹文燕，章腾，陈仕炜，董明龙）</P>
         <P>一体化考核项目</P>
-    </el-footer>
+</div>
 </template>
 
 <script>
@@ -16,13 +16,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.el-footer{
+.d1{
+    height: 90px;
     border-top:1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(49,169,204,0.5);
     text-align: center;
 }
-.el-footer p{
-    line-height: 10px;
+.d1 p{
+    line-height: 20px;
     color: white;
     font-size:16px;
     font-weight: 500;

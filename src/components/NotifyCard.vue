@@ -1,5 +1,5 @@
 <template>
-    <div class="block">
+    <div class="not1">
   <el-timeline>
     <el-timeline-item timestamp="2019/6/12" placement="top">
       <el-card>
@@ -71,21 +71,23 @@ export default {
 </script>
 
 <style scoped>
-    *{
+    /* *{
         margin: 0px;
         padding: 0px;
+    } */
+    .not1{
+        width: 600px;
     }
     .notiTitle {
         width: 565px;
         font-size: 15px;
+        margin: 0px;
         font-weight: bold;
-        line-height: 30px;
-        clear: both;
+        /* clear: both; */
         color: #259fc8;
         text-decoration: none;
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
     }
     .notiMain {
         color: #333;
@@ -93,12 +95,13 @@ export default {
         line-height: 22px;
         padding: 5px 0;
         word-wrap: break-word;
+        border-bottom:1px solid rgba(0, 0, 0, 0.1);
     }
     .notiSource {
         margin-top: 5px;
         color: #999;
         line-height: 20px;
-        clear: both;
+        
     }
      .notiInfo span {
         color: #259fc8;
