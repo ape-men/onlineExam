@@ -7,10 +7,7 @@
 
 <script>
 export default {
-    name: 'Header',
-    props: {
-        msg: Number,
-    }
+    name: 'Footer',
 }
 </script>
 
@@ -27,5 +24,17 @@ export default {
     color: white;
     font-size:16px;
     font-weight: 500;
+}
+.el-footer #footerlogo,#intro {
+    float: left;
+}
+.el-footer #footerlogo{
+    margin-top:20px;
+    margin-left: 550px;
+    margin-right: 20px;
+}
+img {
+    width: 80px;
+    height: 70px;
 }
 </style>
