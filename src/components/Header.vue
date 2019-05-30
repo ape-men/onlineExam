@@ -23,7 +23,7 @@ export default {
 #line1 {
     width: 100%;
     height: 10px;
-    background-color: rgba(8, 90, 116, 0.808);
+    background-color: rgba(35, 107, 129, 0.808);
 }
 .logo {
     background-color: rgba(6, 137, 177, 0.808);
