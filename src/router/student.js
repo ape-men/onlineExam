@@ -6,8 +6,7 @@ import CardList from '@/components/CardList'
 Vue.use(Router);
 
 export default new Router({
-    routes: [
-        {
+    routes: [{
             path: '/info',
             name: 'Info',
             component: Info
@@ -34,6 +33,14 @@ export default new Router({
             component: CardList,
             props: {
                 currentCard: 'grade-card'
+            }
+        },
+        {
+            path: '/course',
+            name: 'course',
+            component: CardList,
+            props: {
+                currentCard: 'course-card'
             }
         }
     ]
