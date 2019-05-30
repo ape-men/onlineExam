@@ -66,8 +66,8 @@ export default {
                 ],
                 "notify-card": [
                     {
-                        title: "补考通知",
-                        content: "同学们，一体化工程实践 课程的补考时间是2019.6.5-2019.6.7,补考对象是考试总成绩不超过60分的同学（课程满分总成绩为100分），低于60分会收到平台自动通知补考。请同学们按时参加补考。",
+                        title: "【补考通知】",
+                        content: "  同学们，一体化工程实践 课程的补考时间是2019.6.5-2019.6.7,补考对象是考试总成绩不超过60分的同学（课程满分总成绩为100分），低于60分会收到平台自动通知补考。请同学们按时参加补考。",
                         courseName: "一体化工程实践",
                         professor: "刘志勇",
                         date: new Date(2019, 6, 8),
@@ -81,10 +81,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    div {
-        height: 80px;
-        top: 0px;
-        width: 100%;
-        position: fixed;
-    }
 </style>

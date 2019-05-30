@@ -1,19 +1,52 @@
 <template>
-    <li>
-        <div class="notiBox">
-            <div class="notiTitle">{{ info.title }}</div>
-            <div class="notiMain">{{ info.content }}</div>
-            <div class="notiSource">
-            <label class="notiTime">{{ notifyDate }}</label>
-            <label class="notiInfo">
-                来自：
-                <span style="color: #259fc8;">{{ info.professor }}</span>
-                老师
-                <span style="color: #259fc8;">【{{ info.courseName }}】</span>
-            </label>
-            </div>
-        </div>
-    </li>
+    <div class="block">
+  <el-timeline>
+    <el-timeline-item timestamp="2019/6/12" placement="top">
+      <el-card>
+<h4 class="notiTitle">{{info.title}}</h4>
+        <p class="notiMain">{{ info.content }}</p>
+        <span class="notiTime">{{ notifyDate }} </span>
+        <span class="notiInfo">
+            来自：<span style="color: #259fc8;">{{ info.professor }}</span> 老师
+            <span style="color: #259fc8;"> 课程:【{{ info.courseName }}】</span>
+        </span>
+      </el-card>
+    </el-timeline-item>
+    <el-timeline-item timestamp="2019/6/3" placement="top">
+      <el-card>
+<h4 class="notiTitle">{{info.title}}</h4>
+        <p class="notiMain">{{ info.content }}</p>
+        <span class="notiTime">{{ notifyDate }} </span>
+        <span class="notiInfo">
+            来自：<span style="color: #259fc8;">{{ info.professor }}</span> 老师
+            <span style="color: #259fc8;"> 课程:【{{ info.courseName }}】</span>
+        </span>
+      </el-card>
+    </el-timeline-item>
+    <el-timeline-item timestamp="2019/6/1" placement="top">
+      <el-card>
+        <h4 class="notiTitle">{{info.title}}</h4>
+        <p class="notiMain">{{ info.content }}</p>
+        <span class="notiTime">{{ notifyDate }} </span>
+        <span class="notiInfo">
+            来自：<span style="color: #259fc8;">{{ info.professor }}</span> 老师
+            <span style="color: #259fc8;"> 课程:【{{ info.courseName }}】</span>
+        </span>
+      </el-card>
+    </el-timeline-item>
+    <el-timeline-item timestamp="2019/6/1" placement="top">
+      <el-card>
+        <h4 class="notiTitle">{{info.title}}</h4>
+        <p class="notiMain">{{ info.content }}</p>
+        <span class="notiTime">{{ notifyDate }} </span>
+        <span class="notiInfo">
+            来自：<span style="color: #259fc8;">{{ info.professor }}</span> 老师
+            <span style="color: #259fc8;"> 课程:【{{ info.courseName }}】</span>
+        </span>
+      </el-card>
+    </el-timeline-item>
+  </el-timeline>
+</div>
 </template>
 
 <script>
@@ -42,30 +75,9 @@ export default {
         margin: 0px;
         padding: 0px;
     }
-    .noti {
-        width: 690px;
-        float: left;
-        display: inline;
-        line-height: 16px;
-        color: #666;
-        font-size: 12px;
-        font-family: "Arial","Hiragino Sans GB","Helvetica","sans-serif";
-    }
-    .noti li {
-        list-style: none;
-        vertical-align: bottom;
-        list-style-type: none;
-        padding: 10px 0 20px 0;
-        width: 690px;
-        border-bottom: #d4d4d4 1px dotted;
-    }
-    .notiBox {
-        width: 690px;
-        margin: 0 auto;
-    }
-    .notiBox .notiTitle {
-        width: 660px;
-        font-size: 14px;
+    .notiTitle {
+        width: 565px;
+        font-size: 15px;
         font-weight: bold;
         line-height: 30px;
         clear: both;
@@ -75,20 +87,20 @@ export default {
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    .notiBox .notiMain {
+    .notiMain {
         color: #333;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 22px;
         padding: 5px 0;
         word-wrap: break-word;
     }
-    .notiBox .notiSource {
+    .notiSource {
         margin-top: 5px;
         color: #999;
         line-height: 20px;
         clear: both;
     }
-    .notiBox .notiSource .notiInfo span {
+     .notiInfo span {
         color: #259fc8;
     }
 </style>

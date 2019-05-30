@@ -1,15 +1,41 @@
 <template>
     <el-tabs v-model="activeName" @tab-click="handleClick">
         <el-tab-pane label="个人信息" name="first">
-            <div class="info">
-                <p>姓名：{{ info.name }}</p>
-                <p>学号：{{ info.ID }}</p>
-                <p>学院：{{ info.college }}</p>
-                <p>专业：{{ info.subject }}</p>
-                <p>年级：{{ info.grade }}</p>
-                <p>邮箱：{{ info.email }}</p>
-                <p>电话：{{ info.telephone }}</p>
-            </div>
+            <el-card class="box-card">
+        <div class="text item">
+            {{' 姓名 : ' + info.name }}
+        </div>
+        </el-card>
+        <el-card class="box-card">
+        <div class="text item">
+            {{' 学号 : ' + info.ID}}
+        </div>
+        </el-card>
+        <el-card class="box-card">
+        <div class="text item">
+            {{' 学院 : ' + info.college}}
+        </div>
+        </el-card>
+        <el-card class="box-card">
+        <div class="text item">
+            {{' 专业 : ' + info.subject}}
+        </div>
+        </el-card>
+        <el-card class="box-card">
+        <div class="text item">
+            {{' 年级 : ' + info.grade}}
+        </div>
+        </el-card>
+        <el-card class="box-card">
+        <div class="text item">
+            {{' Email : ' + info.email}}
+        </div>
+        </el-card>
+        <el-card class="box-card">
+        <div class="text item">
+            {{' 电话 : ' + info.telephone}}
+        </div>
+        </el-card>
         </el-tab-pane>
         <el-tab-pane label="账户信息" name="second">
             <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
@@ -112,8 +138,8 @@ export default {
                 ID: '2018000000',
                 college: '信息科学与技术学院',
                 subject: '软件工程',
-                grade: '大一',
-                email: 'dml@nenu.edu.cn',
+                grade: '2018',
+                email: 'dongml874@nenu.edu.cn',
                 telephone: '100 0000 0000'
             };
         }
@@ -124,5 +150,17 @@ export default {
 <style>
     .el-input {
         width: 300px;
+    }
+        .text {
+        font-size: 14px;
+    }
+
+    .item {
+        padding: 3px 0;
+    }
+
+    .box-card {
+        margin-left: 10px;
+        width: 650px;
     }
 </style>

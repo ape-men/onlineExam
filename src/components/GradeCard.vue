@@ -45,15 +45,15 @@ export default {
         color: #666;
         font-size: 12px;
         padding: 10px 0 20px 0;
-        width: 690px;
+        width: 600px;
         border-bottom: #d4d4d4 1px dotted;
     }
     .gradesBox {
-        width: 690px;
+        width: 600px;
         margin: 0 auto;
     }
     .gradesBox .gradesTitle {
-        width: 660px;
+        width: 600px;
         font-size: 14px;
         font-weight: bold;
         line-height: 30px;

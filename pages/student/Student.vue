@@ -1,7 +1,6 @@
 <template>
 <el-row class="tac">
     <el-col :span="6" class="aside">
-        <h5>默认颜色</h5>
         <el-menu
             ref="sideBar"
             default-active="2"
@@ -22,6 +21,10 @@
             <el-menu-item index="4" router-link="/grade">
                 <i class="el-icon-setting"></i>
                 <span slot="title">成绩查询</span>
+            </el-menu-item>
+            <el-menu-item index="5" router-link="/calender">
+                <i class="el-icon-document"></i>
+                <span slot="title">实时日历</span>
             </el-menu-item>
         </el-menu>
     </el-col>
@@ -44,7 +47,8 @@ export default {
 
 <style>
 .el-row {
-    min-height: 800px;
+    min-height: 700px;
+    background-color:white;
 }
 a {
     color: black;
