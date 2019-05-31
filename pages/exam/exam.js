@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Exam from './Exam.vue'
-import TopBar from '@/components/TopBar'
+// import TopBar from '@/components/TopBar'
 import LeftBar from '@/components/LeftBar'
 import BackTop from '@/components/BackTop'
 import Color from '@/components/Color'
