@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="d1">
         <ul>
             <component
                 v-bind:is="currentCard"
@@ -81,4 +81,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 </style>

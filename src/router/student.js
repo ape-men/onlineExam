@@ -8,6 +8,10 @@ Vue.use(Router);
 export default new Router({
     routes: [
         {
+            path: '/',
+            redirect: '/examList',
+        },
+        {
             path: '/info',
             name: 'Info',
             component: Info
