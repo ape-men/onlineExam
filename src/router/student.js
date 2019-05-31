@@ -6,7 +6,8 @@ import CardList from '@/components/CardList'
 Vue.use(Router);
 
 export default new Router({
-    routes: [{
+    routes: [
+        {
             path: '/',
             redirect: '/examList',
         },

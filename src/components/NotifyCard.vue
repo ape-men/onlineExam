@@ -101,7 +101,7 @@ export default {
         margin-top: 5px;
         color: #999;
         line-height: 20px;
-        
+
     }
      .notiInfo span {
         color: #259fc8;

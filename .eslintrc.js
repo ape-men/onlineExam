@@ -28,7 +28,7 @@ module.exports = {
     "no-unused-vars": [1, {"vars": "local", "args": "none"}], // 不能有声明后未被使用的局部变量
     "key-spacing": [1, {"beforeColon": false, "afterColon": true }], //对象字面量中冒号前无空格，后有
     "strict": 1,             // 启用严格模式
-    'vue/script-indent': ['error', 4, {'baseIndent': 0}],
+    'vue/script-indent': [1, 4, {'baseIndent': 0}],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   }
