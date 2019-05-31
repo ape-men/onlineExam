@@ -12,8 +12,8 @@
       <div class="choose">
           <el-radio label="1a" border><span class="choosecolor">A. 1</span></el-radio>
       <el-radio label="1b" border><span class="choosecolor">B. 2</span></el-radio>
-      <el-radio label="1c" border>C. 3</el-radio>
-        <el-radio label="1d" border>D. 4</el-radio>
+      <el-radio label="1c" border><span class="choosecolor">C. 3</span></el-radio>
+        <el-radio label="1d" border><span class="choosecolor">D. 4</span></el-radio>
     </div>
       
     </el-radio-group>  
@@ -25,10 +25,10 @@
         <el-button round><el-tag>单选</el-tag><span class="middle choosecolor">  已知正方体的棱长为1，每条棱所在直线与平截此正方体所得截面面积的最大值为（    ）</span></el-button>
         <br >
               <div class="choose">
-      <el-radio label="2a" border>A. 1</el-radio>
-      <el-radio label="2b" border>B. 2</el-radio>
-      <el-radio label="2c" border>C. 3</el-radio>
-      <el-radio label="2d" border>D. 4</el-radio>
+      <el-radio label="2a" border><span class="choosecolor">A. 1</span></el-radio>
+      <el-radio label="2b" border><span class="choosecolor">B. 2</span></el-radio>
+      <el-radio label="2c" border><span class="choosecolor">C. 3</span></el-radio>
+      <el-radio label="2d" border><span class="choosecolor">D. 4</span></el-radio>
       </div>
 
     </el-radio-group>
@@ -39,10 +39,10 @@
         <el-button round><el-tag>单选</el-tag><span class="middle choosecolor">  已知正方体的棱正方体所得截面面积的最大值为（    ）</span></el-button>
         <br >
                       <div class="choose">
-      <el-radio label="3a" border>A. 1</el-radio>
-      <el-radio label="3b" border>B. 2</el-radio>
-      <el-radio label="3c" border>C. 3</el-radio>
-      <el-radio label="3d" border>D. 4</el-radio>
+      <el-radio label="3a" border><span class="choosecolor">A. 1</span></el-radio>
+      <el-radio label="3b" border><span class="choosecolor">B. 2</span></el-radio>
+      <el-radio label="3c" border><span class="choosecolor">C. 3</span></el-radio>
+      <el-radio label="3d" border><span class="choosecolor">D. 4</span></el-radio>
       </div>
     </el-radio-group>
   </el-form-item>
@@ -52,10 +52,10 @@
         <el-button round><el-tag>单选</el-tag><span class="middle choosecolor">  已知正方体的棱长为1的最大值为（    ）</span></el-button>
         <br >
                       <div class="choose">
-      <el-radio label="4a" border>A. 1</el-radio>
-      <el-radio label="4b" border>B. 2</el-radio>
-      <el-radio label="4c" border>C. 3</el-radio>
-      <el-radio label="4d" border>D. 4</el-radio>
+      <el-radio label="4a" border><span class="choosecolor">A. 1</span></el-radio>
+      <el-radio label="4b" border><span class="choosecolor">B. 2</span></el-radio>
+      <el-radio label="4c" border><span class="choosecolor">C. 3</span></el-radio>
+      <el-radio label="4d" border><span class="choosecolor">D. 4</span></el-radio>
       </div>
     </el-radio-group>
   </el-form-item>
@@ -65,10 +65,10 @@
         <el-button round><el-tag>单选</el-tag><span class="middle choosecolor">  已知正方体的棱长为1，每条棱所在直线等，则截此正方体所得截面面积的最大值为（    ）</span></el-button>
         <br >
                       <div class="choose">
-      <el-radio label="5a" border>A. 1</el-radio>
-      <el-radio label="5b" border>B. 2</el-radio>
-      <el-radio label="5c" border>C. 3</el-radio>
-      <el-radio label="5d" border>D. 4</el-radio>
+      <el-radio label="5a" border><span class="choosecolor">A. 1</span></el-radio>
+      <el-radio label="5b" border><span class="choosecolor">B. 2</span></el-radio>
+      <el-radio label="5c" border><span class="choosecolor">C. 3</span></el-radio>
+      <el-radio label="5d" border><span class="choosecolor">D. 4</span></el-radio>
       </div>
     </el-radio-group>
   </el-form-item>
@@ -78,10 +78,10 @@
         <el-button round><el-tag>单选</el-tag><span class="middle choosecolor">  已知正方体的棱长为1，与平面所成的角相等，则截此正方体所得截面面积的最大值为（    ）</span></el-button>
         <br >
                       <div class="choose">
-      <el-radio label="6a" border>A. 1</el-radio>
-      <el-radio label="6b" border>B. 2</el-radio>
-      <el-radio label="6c" border>C. 3</el-radio>
-      <el-radio label="6d" border>D. 4</el-radio>
+      <el-radio label="6a" border><span class="choosecolor">A. 1</span></el-radio>
+      <el-radio label="6b" border><span class="choosecolor">B. 2</span></el-radio>
+      <el-radio label="6c" border><span class="choosecolor">C. 3</span></el-radio>
+      <el-radio label="6d" border><span class="choosecolor">D. 4</span></el-radio>
       </div>
     </el-radio-group>
   </el-form-item>
@@ -91,10 +91,10 @@
         <el-button round><el-tag>单选</el-tag><span class="middle choosecolor">  已知正方体的棱长为1，每条成的角相等，则截此正方体所得截面面积的最大值为（    ）</span></el-button>
         <br >
                       <div class="choose">
-      <el-radio label="7a" border>A. 1</el-radio>
-      <el-radio label="7b" border>B. 2</el-radio>
-      <el-radio label="7c" border>C. 3</el-radio>
-      <el-radio label="7d" border>D. 4</el-radio>
+      <el-radio label="7a" border><span class="choosecolor">A. 1</span></el-radio>
+      <el-radio label="7b" border><span class="choosecolor">B. 2</span></el-radio>
+      <el-radio label="7c" border><span class="choosecolor">C. 3</span></el-radio>
+      <el-radio label="7d" border><span class="choosecolor">D. 4</span></el-radio>
       </div>
     </el-radio-group>
   </el-form-item>
@@ -104,10 +104,10 @@
         <el-button round><el-tag>单选</el-tag><span class="middle choosecolor">  已知正方体的棱长为1，每条棱所在直线与平面所成1，每条棱所在直线与平面所成的角相等，则截此正方体所得截面面积的最大值为（    ）</span></el-button>
         <br >
                       <div class="choose">
-      <el-radio label="8a" border>A. 1</el-radio>
-      <el-radio label="8b" border>B. 2</el-radio>
-      <el-radio label="8c" border>C. 3</el-radio>
-      <el-radio label="8d" border>D. 4</el-radio>
+      <el-radio label="8a" border><span class="choosecolor">A. 1</span></el-radio>
+      <el-radio label="8b" border><span class="choosecolor">B. 2</span></el-radio>
+      <el-radio label="8c" border><span class="choosecolor">C. 3</span></el-radio>
+      <el-radio label="8d" border><span class="choosecolor">D. 4</span></el-radio>
       </div>
     </el-radio-group>
   </el-form-item>
@@ -117,10 +117,10 @@
         <el-button round><el-tag>单选</el-tag><span class="middle choosecolor">  已知正方体的棱长为1，每条棱所在的角相等，则截此正方体所得截面面积的最大值为（    ）</span></el-button>
         <br >
                       <div class="choose">
-      <el-radio label="9a" border>A. 1</el-radio>
-      <el-radio label="9b" border>B. 2</el-radio>
-      <el-radio label="9c" border>C. 3</el-radio>
-      <el-radio label="9d" border>D. 4</el-radio>
+      <el-radio label="9a" border><span class="choosecolor">A. 1</span></el-radio>
+      <el-radio label="9b" border><span class="choosecolor">B. 2</span></el-radio>
+      <el-radio label="9c" border><span class="choosecolor">C. 3</span></el-radio>
+      <el-radio label="9d" border><span class="choosecolor">D. 4</span></el-radio>
       </div>
     </el-radio-group>
   </el-form-item>
@@ -130,10 +130,10 @@
         <el-button round><el-tag>单选</el-tag><span class="middle choosecolor">  已知正方体的棱长为1，每条棱所在直线与平1，每条棱所在直线面所成面所成的角相等，则截此正方体所得截面面积的最大值为（    ）</span></el-button>
         <br >
                       <div class="choose">
-      <el-radio label="10a" border>A. 1</el-radio>
-      <el-radio label="10b" border>B. 2</el-radio>
-      <el-radio label="10c" border>C. 3</el-radio>
-      <el-radio label="10d" border>D. 4</el-radio>
+      <el-radio label="10a" border><span class="choosecolor">A. 1</span></el-radio>
+      <el-radio label="10b" border><span class="choosecolor">B. 2</span></el-radio>
+      <el-radio label="10c" border><span class="choosecolor">C. 3</span></el-radio>
+      <el-radio label="10d" border><span class="choosecolor">D. 4</span></el-radio>
       </div>
     </el-radio-group>
   </el-form-item>
@@ -145,10 +145,10 @@
         <el-button round><el-tag type="success">多选</el-tag><span class="middle choosecolor">  活动性质活动性质活动性质活动性质活动性质</span></el-button>
         <br >
                       <div class="multichoose">
-      <el-checkbox label="11-A" name="type">美食/餐厅线上活动</el-checkbox>
-      <el-checkbox label="11-B" name="type">地推活动</el-checkbox>
-      <el-checkbox label="11-C" name="type">线下主题活动</el-checkbox>
-      <el-checkbox label="11-D" name="type">单纯品牌曝光</el-checkbox>
+      <el-checkbox label="11-A" name="type"><span class="choosecolor">美食/餐厅线上活动</span></el-checkbox>
+      <el-checkbox label="11-B" name="type"><span class="choosecolor">地推活动</span></el-checkbox>
+      <el-checkbox label="11-C" name="type"><span class="choosecolor">线下主题活动</span></el-checkbox>
+      <el-checkbox label="11-D" name="type"><span class="choosecolor">单纯品牌曝光</span></el-checkbox>
       </div>
     </el-checkbox-group>
   </el-form-item>
@@ -158,10 +158,10 @@
         <el-button round><el-tag type="success">多选</el-tag><span class="middle choosecolor">  活动性质活动性质性质活动性质</span></el-button>
         <br >
                       <div class="multichoose">
-      <el-checkbox label="12-A" name="type">美食/餐厅线上活动</el-checkbox>
-      <el-checkbox label="12-B" name="type">地推活动地推活动</el-checkbox>
-      <el-checkbox label="12-C" name="type">线下主题活动</el-checkbox>
-      <el-checkbox label="12-D" name="type">单纯品牌曝光单纯品牌曝光单纯品牌曝光</el-checkbox>
+      <el-checkbox label="12-A" name="type"><span class="choosecolor">美食/餐厅线上活动</span></el-checkbox>
+      <el-checkbox label="12-B" name="type"><span class="choosecolor">地推活动地推活动</span></el-checkbox>
+      <el-checkbox label="12-C" name="type"><span class="choosecolor">线下主题活动</span></el-checkbox>
+      <el-checkbox label="12-D" name="type"><span class="choosecolor">单纯品牌曝光单纯品牌曝光单纯品牌曝光</span></el-checkbox>
       </div>
     </el-checkbox-group>
   </el-form-item>
@@ -171,10 +171,10 @@
         <el-button round><el-tag type="success">多选</el-tag><span class="middle choosecolor">  活动性质活动性质活动性质活动性质活动性质</span></el-button>
         <br >
                       <div class="multichoose">
-      <el-checkbox label="13-A" name="type">美食/餐厅线上活动</el-checkbox>
-      <el-checkbox label="13-B" name="type">地推活动</el-checkbox>
-      <el-checkbox label="13-C" name="type">地推d d a 活动</el-checkbox>
-      <el-checkbox label="13-D" name="type">单纯品牌曝光</el-checkbox>
+      <el-checkbox label="13-A" name="type"><span class="choosecolor">美食/餐厅线上活动</span></el-checkbox>
+      <el-checkbox label="13-B" name="type"><span class="choosecolor">地推活动</span></el-checkbox>
+      <el-checkbox label="13-C" name="type"><span class="choosecolor">地推d d a 活动</span></el-checkbox>
+      <el-checkbox label="13-D" name="type"><span class="choosecolor">单纯品牌曝光</span></el-checkbox>
       </div>
     </el-checkbox-group>
   </el-form-item>
@@ -184,10 +184,10 @@
         <el-button round><el-tag type="success">多选</el-tag><span class="middle choosecolor">  活动性质活动性质活动性质活动性质活动性质</span></el-button>
         <br >
                       <div class="multichoose">
-      <el-checkbox label="14-A" name="type">美食/餐厅线上活动</el-checkbox>
-      <el-checkbox label="14-B" name="type">地推活动</el-checkbox>
-      <el-checkbox label="14-C" name="type">线下主题活动</el-checkbox>
-      <el-checkbox label="14-D" name="type">单纯品牌曝光</el-checkbox>
+      <el-checkbox label="14-A" name="type"><span class="choosecolor">美食/餐厅线上活动</span></el-checkbox>
+      <el-checkbox label="14-B" name="type"><span class="choosecolor">地推活动</span></el-checkbox>
+      <el-checkbox label="14-C" name="type"><span class="choosecolor">线下主题活动</span></el-checkbox>
+      <el-checkbox label="14-D" name="type"><span class="choosecolor">单纯品牌曝光</span></el-checkbox>
       </div>
     </el-checkbox-group>
   </el-form-item>
@@ -197,10 +197,10 @@
         <el-button round><el-tag type="success">多选</el-tag><span class="middle choosecolor">  活动性质活动性质活动性质活动性质活动性质</span></el-button>
         <br >
                       <div class="multichoose">
-      <el-checkbox label="15-A" name="type">美食/餐厅线上活动</el-checkbox>
-      <el-checkbox label="15-B" name="type">美食/餐厅线上活动美食/餐厅线上活动</el-checkbox>
-      <el-checkbox label="15-C" name="type">美食/餐厅食/餐厅线上活动</el-checkbox>
-      <el-checkbox label="15-D" name="type">单纯品牌曝光</el-checkbox>
+      <el-checkbox label="15-A" name="type"><span class="choosecolor">美食/餐厅线上活动</span></el-checkbox>
+      <el-checkbox label="15-B" name="type"><span class="choosecolor">美食/餐厅线上活动美食/餐厅线上活动</span></el-checkbox>
+      <el-checkbox label="15-C" name="type"><span class="choosecolor">美食/餐厅食/餐厅线上活动</span></el-checkbox>
+      <el-checkbox label="15-D" name="type"><span class="choosecolor">单纯品牌曝光</span></el-checkbox>
       </div>
     </el-checkbox-group>
   </el-form-item>
