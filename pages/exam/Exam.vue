@@ -240,7 +240,11 @@
   </el-form-item>
 
   <el-form-item label="20">
-          <el-button round><el-tag type="danger">简答</el-tag><span class="middle choosecolor">  已知函数2si某工厂的某种2s检验出不，则fx2sinsin2fxxx，则fx验，再根据检验结果决定是否对余下的所有产品作检验nsin2fxxx</span></el-button>
+          <el-button round><span class="middle choosecolor">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已知函数2si某工厂的某种2s检验出不，则fx2sinsin2fxxx，则fx验，再根据检验结果决定是否对余下的所有产品作检验nsin2fxxx</span>
+          <br >
+          <el-tag type="danger">简答</el-tag><span class="middle choosecolor">已知函数2si某工厂的某种2s检验出不，则fx2sinsin2fxxx，则fx验，再根据检验结果决定是否对余下的所有产品作检验nsin2fxxx</span>
+          <br >
+          <span class="middle choosecolor">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已知函数2si某工厂的某种2s检验出不，则fx2sinsin2fxxx，则fx验，再根据检验结果决定是否对余下的所有产品作检验nsin2fxxx</span></el-button>
         <br >
         <div class="SAQ">
     <el-input type="textarea" v-model="form.desc5" rows="20"></el-input>
