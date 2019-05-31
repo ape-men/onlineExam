@@ -9,7 +9,7 @@
             </div>
         </div>
         <div id="line2"></div>
-        
+
     </header>
 </template>
 
