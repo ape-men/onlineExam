@@ -1,13 +1,11 @@
 <template>
-    <el-footer style="height: 120px;">
-        <img id="footerlogo" src="../../src/assets/footerlogo.png">
-        <div id="intro">
+<el-row class="fa">
+        <el-col :span="20" :offset="2" class="d">
             <P>Designed by:ape-men @一体化小组</P>
             <p>唐佳成,章腾,陈仕炜,董明龙,邹文燕</p>
-            <p>邮箱: webmaster@nenu.edu.cn</p>
-            <P>地址: https://github.com/ape-men</P>
-        </div>
-    </el-footer>
+            <P>小组地址: https://github.com/ape-men</P>
+        </el-col>
+</el-row>
 </template>
 
 <script>
@@ -18,29 +16,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.el-footer {
-    border-top:2px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(6, 137, 177, 0.808);
-    height: 400px;
-    width: 100%;
-    padding-bottom: 10px;
+.fa{
+    min-height: 50px;
+    background-color: inherit;
 }
-.el-footer #intro p {
+.d {
+    border-top:1px solid rgba(0, 0, 0, 0.1);
+    background-color: #90d7ec;
+    text-align: center;
+    border-radius: 4px;
+    /* padding-bottom: 5px; */
+}
+.d p {
     line-height: 10px;
     color:white;
-    font-size:14px;
-    font-weight: 500;
+    font-size:16px;
+    font-weight: 700;
 }
-.el-footer #footerlogo,#intro {
-    float: left;
-}
-.el-footer #footerlogo{
-    margin-top:20px;
-    margin-left: 550px;
-    margin-right: 20px;
-}
-img {
-    width: 80px;
-    height: 70px;
-}
+
 </style>
