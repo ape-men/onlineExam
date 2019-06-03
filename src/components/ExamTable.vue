@@ -38,6 +38,11 @@
                 <el-form-item label="是否立即可查成绩">
                     <span>{{ props.row.是否立即可查成绩 }}</span>
                 </el-form-item>
+                <el-form-item label="">
+                </el-form-item>
+                <el-form-item >
+                    <el-button  type="primary" @click="exam()" >进入考试</el-button>
+                </el-form-item>
             </el-form>
         </template>
         </el-table-column>
@@ -61,7 +66,7 @@
 font-size: 0;
 }
 .table label {
-width: 180px;
+width: 130px;
 color: #99a9bf;
 }
 .table .el-form-item {
@@ -69,12 +74,37 @@ margin-right: 0;
 margin-bottom: 0;
 width: 50%;
 }
+.table .el-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
 </style>
 
 
 <script>
 export default {
     name: 'ExamTable',
+    methods:{
+        exam(){
+         this.$confirm('是否进入考试?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+                window.location.href="/exam.html";
+          this.$message({
+            type: 'success',
+            message: '进入考试!'
+          });
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '不进入'
+          });          
+        });
+        }
+    },
     data() {
         return {
             tableData: [{
