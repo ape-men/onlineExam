@@ -126,7 +126,7 @@
 <style>
 .he{
   margin: 0 auto;
-    height: 800px;
+    min-height: 800px;
     width: 80%;
 }
 .h2{

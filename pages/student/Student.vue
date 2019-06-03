@@ -57,7 +57,8 @@ export default {
 </script>
 
 <style>
-.el-row {
+.tac {
+    margin-top:5px;
     min-height: 700px;
     background-color:white;
 }

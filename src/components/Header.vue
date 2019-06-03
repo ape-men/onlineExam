@@ -25,7 +25,7 @@ export default {
     position: fixed;
     left: 0px;
     right: 0px;
-    top: 5px;
+    top: 0px;
     padding-top: 5px;
     background: rgba(255, 255, 255, 0.8);
     margin-left:auto;
@@ -33,6 +33,7 @@ export default {
     border-bottom: 1px solid rgba(0,0 ,0, 0.1);
     padding-bottom:10px;
     z-index: 1000;
+    min-height: 40px;
 }
 .head{
     border-radius: 4px;
@@ -40,6 +41,7 @@ export default {
     font-weight: 900;
     font-size: 30px;
     line-height: 40px;
+    min-height: 25px;
 }
 .head span,img{
     vertical-align: middle;
