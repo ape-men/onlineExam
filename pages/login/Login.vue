@@ -11,7 +11,7 @@
             <el-input type="input2" placeholder="请输入密码" v-model="form.input2" show-password @focus="open2" prefix-icon="el-icon-edit"></el-input>
             </el-form-item>
                 <a href="https://account.nenu.edu.cn/password/reSet.htm" class="a1">忘记密码</a>
-          <el-button plain type="primary" @click="submitForm(form)" >登录</el-button>
+          <el-button  type="primary" @click="submitForm(form)" >登录</el-button>
         </el-form>
     </div>
     </el-col>
@@ -47,8 +47,16 @@ export default {
                 window.location.href="/loginadmin.html";
             }
             else{
-               alert("用户名或密码错误"); 
+               this.$alert('用户名或密码不正确', '错误！', {
+          confirmButtonText: '确定',
+          callback: action => {
+            this.$message({
+              type: 'warning',
+              message: '请重新输入用户名或密码'
+            });
             }
+        }) 
+        }
         }
     },
     data(){
@@ -77,7 +85,7 @@ a{
 .h{
     margin-top:10px;
     padding-top: 100px;
-    height: 650px;
+    height: 615px;
     background:rgba(0, 0, 0, 0);
 }
 .p1{
@@ -86,7 +94,6 @@ a{
     font-weight: 700;
 }
 .login{
-    transform: perspective(700px);
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     padding-top: 30px;
