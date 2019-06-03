@@ -2,39 +2,70 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Info from '@/components/Info'
 import CardList from '@/components/CardList'
+import ExamPoster from '@/components/ExamPoster'
+import NotifyPoster from '@/components/NotifyPoster'
+// import ExamPoster from '@/components/ExamPoster'
+// import NotifyPoster from '@/components/NotifyPoster'
 
 Vue.use(Router);
 
 export default new Router({
     routes: [
         {
+            path: '/',
+            redirect: '/examList',
+        },
+        {
             path: '/info',
             name: 'Info',
-            component: Info
-        },
-        {
-            path: '/examList',
-            name: 'ExamList',
-            component: CardList,
-            props: {
-                currentCard: 'exam-card'
+            components: {
+                main: Info
             }
         },
         {
-            path: '/notify',
-            name: 'Notify',
-            component: CardList,
+            path: '/class',
+            name: 'Class',
+            //component: Class,
             props: {
-                currentCard: 'notify-card'
+                currentCard: 'grade'
+            }
+        },
+        // {
+        //     path: '/questionManager',
+        //     name: 'QuestionManager',
+        //     components: {
+        //         main: QuestionPoster,
+        //         attach: QuestionTable,
+        //     },
+        //     props: {
+        //         currentCard: 'exam-card'
+        //     }
+        // },
+        {
+            path: '/examManager',
+            name: 'ExamManager',
+            components: {
+                main: ExamPoster,
+                attach: CardList,
+            },
+            props: {
+                attach: {
+                    currentCard: 'exam-card'
+                }
             }
         },
         {
-            path: '/grade',
-            name: 'Grade',
-            component: CardList,
+            path: '/notifyPoster',
+            name: 'NotifyPoster',
+            components: {
+                main: NotifyPoster,
+                attach: CardList,
+            },
             props: {
-                currentCard: 'grade-card'
+                attach: {
+                    currentCard: 'notify-card'
+                }
             }
-        }
+        },
     ]
 })
