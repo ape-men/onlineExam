@@ -6,16 +6,28 @@ import ElementUI from 'element-ui'
 import Footer from '@/components/Footer'
 import 'element-ui/lib/theme-chalk/index.css'
 import router from '@/router/teacher'
-
+import Power from '@/components/Power'
+import ToTop from '@/components/ToTop'
+import Header from '@/components/Header'
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 
 /* eslint-disable no-new */
-// new Vue({
-//     el: 'header',
-//     components: { Header },
-//     template: '<Header/>'
-// })
+new Vue({
+    el: 'header',
+    components: { Header },
+    template: '<Header/>'
+})
+new Vue({
+    el: 'power',
+    components: { Power },
+    template: '<Power/>'
+})
+new Vue({
+    el: 'totop',
+    components: { ToTop },
+    template: '<ToTop/>'
+})
 
 new Vue({
     el: '#teacher',

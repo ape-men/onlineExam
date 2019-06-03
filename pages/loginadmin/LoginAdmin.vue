@@ -29,7 +29,15 @@ export default {
                 window.location.href="/login.html";
             }
             else{
-               alert("用户名或密码错误"); 
+                this.$alert('用户名或密码不正确', '错误！', {
+          confirmButtonText: '确定',
+          callback: action => {
+            this.$message({
+              type: 'warning',
+              message: '请重新输入用户名或密码'
+            });
+            }
+        }) 
             }
         }
     },
@@ -45,6 +53,9 @@ export default {
 }
 </script>
 <style>
+body{
+    margin: 0;
+}
 .h{
     margin-top:10px;
     padding-top: 100px;
