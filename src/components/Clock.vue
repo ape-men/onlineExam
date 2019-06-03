@@ -1,26 +1,29 @@
 <template>
-  <div>
-    <el-button @click="show = !show">Click Me</el-button>
-
-    <div style="display: flex; margin-top: 20px; height: 100px;">
-      <transition name="el-fade-in-linear">
-        <div v-show="show" class="transition-box">.el-fade-in-linear</div>
-      </transition>
-      
-    </div>
-  </div>
+<div>
+    <canvas></canvas>
+</div>
 </template>
 
 <script>
-    export default {
-    data: () => ({
-      show: true
-    })
-  }
+import '../../static/js/clock.js'
+export default {
+    name: "Clock",
+    props: {
+        startTime: Date,
+    },
+    created() {
+        new Timer(startTime);
+    },
+    data() {
+        return {
+            show: true,
+        }
+    }
+}
 </script>
 
 <style>
-  .transition-box {
+.transition-box {
     margin-bottom: 10px;
     width: 200px;
     height: 100px;
@@ -31,5 +34,5 @@
     padding: 40px 20px;
     box-sizing: border-box;
     margin-right: 20px;
-  }
+}
 </style>
