@@ -33,7 +33,7 @@ this.$confirm('是否退出登录', '提示', {
 .power{
     position:fixed;
     padding-top:20px;
-    left:75%;
+    left:85%;
     top:0px;
     z-index: 2000;
 }
