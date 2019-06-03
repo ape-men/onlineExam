@@ -2,6 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Info from '@/components/Info'
 import CardList from '@/components/CardList'
+import ExamTable from '@/components/ExamTable'
+import GradeTable from '@/components/GradeTable'
+import NotifyTimeLine from '@/components/NotifyTimeLine'
+import { Calendar } from 'element-ui';
 
 Vue.use(Router);
 
@@ -19,26 +23,17 @@ export default new Router({
         {
             path: '/examList',
             name: 'ExamList',
-            component: CardList,
-            props: {
-                currentCard: 'exam-card'
-            }
+            component: ExamTable,
         },
         {
             path: '/notify',
             name: 'Notify',
-            component: CardList,
-            props: {
-                currentCard: 'notify-card'
-            }
+            component: NotifyTimeLine,
         },
         {
             path: '/grade',
             name: 'Grade',
-            component: CardList,
-            props: {
-                currentCard: 'grade-card'
-            }
+            component: GradeTable,
         },
         {
             path: '/course',
@@ -47,6 +42,11 @@ export default new Router({
             props: {
                 currentCard: 'course-card'
             }
+        },
+        {
+            path: '/calendar',
+            name: 'Calendar',
+            component: Calendar,
         }
     ]
 })
