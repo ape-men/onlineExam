@@ -1,24 +1,23 @@
 <template>
-    <div class="d1">
+    <div>
         <ul>
             <component
                 v-bind:is="currentCard"
                 v-for="(item, index) in cardInfos[currentCard]"
-                v-bind:info="item" :key="index"></component>
+                v-bind:info="item" :key="index">
+            </component>
         </ul>
     </div>
 </template>
 
 <script>
 import ExamCard from '@/components/ExamCard'
-import GradeCard from '@/components/GradeCard'
 import NotifyCard from '@/components/NotifyCard'
 
 export default {
     name: 'ExamList',
     components: {
         'exam-card': ExamCard,
-        'grade-card': GradeCard,
         'notify-card': NotifyCard
     },
     props: {
@@ -31,7 +30,6 @@ export default {
         return {
             cardInfos: {
                 "exam-card": [],
-                "grade-card": [],
                 "notify-card": []
             }
         }
@@ -44,6 +42,7 @@ export default {
     },
     methods: {
         fetchData() {
+            console.log(this.currentCard);
             this.cardInfos = {
                 "exam-card": [
                     {
@@ -54,14 +53,6 @@ export default {
                         startTime: new Date(2019, 5, 28, 6, 0),
                         endTime: new Date(2019, 6, 1, 8, 0),
                         totalScore: 100,
-                    }
-                ],
-                "grade-card": [
-                    {
-                        courseName: "一体化工程实践",
-                        professor: "刘志勇",
-                        score: 98,
-                        date: new Date(2019, 6, 8),
                     }
                 ],
                 "notify-card": [

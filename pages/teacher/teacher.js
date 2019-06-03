@@ -5,7 +5,7 @@ import Teacher from './Teacher.vue'
 import ElementUI from 'element-ui'
 import Footer from '@/components/Footer'
 import 'element-ui/lib/theme-chalk/index.css'
-import router from '../../src/router/teacher'
+import router from '@/router/teacher'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
