@@ -53,6 +53,9 @@ export default {
 }
 </script>
 <style>
+body{
+    margin: 0;
+}
 .h{
     margin-top:10px;
     padding-top: 100px;

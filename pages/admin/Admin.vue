@@ -124,10 +124,16 @@
   </el-tabs>
 </template>
 <style>
+body{
+  background: #e5e9f2;
+  margin: 0;
+}
 .he{
-  margin: 0 auto;
+    margin: 0 auto;
     min-height: 800px;
     width: 80%;
+    background: white;
+    
 }
 .h2{
     font-size: 20px;
