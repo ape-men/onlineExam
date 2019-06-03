@@ -125,7 +125,9 @@
 </template>
 <style>
 .he{
+  margin: 0 auto;
     height: 800px;
+    width: 80%;
 }
 .h2{
     font-size: 20px;
