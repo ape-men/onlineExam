@@ -1,22 +1,54 @@
 <template>
 <div>
-    <canvas></canvas>
+    <el-progress type="circle" :show-text="false" :percentage="hourPointer"></el-progress>
+    <el-progress type="circle" :show-text="false" :percentage="minPointer"></el-progress>
+    <el-progress type="circle" :show-text="false" :percentage="secPointer"></el-progress>
+    <span>{{ hour }} : {{ min }} : {{ sec }}</span>
 </div>
 </template>
 
 <script>
-import '../../static/js/clock.js'
 export default {
     name: "Clock",
     props: {
-        startTime: Date,
     },
     created() {
-        new Timer(startTime);
+        this.count();
     },
     data() {
         return {
-            show: true,
+            totalTime: 120,
+            timeLeft: 0,
+            totalHour: 0,
+            hour: 0,
+            min: 0,
+            sec: 0,
+        }
+    },
+    computed: {
+        hourPointer: function() {
+            return this.hour / this.totalHour * 100;
+        },
+        minPointer: function() {
+            return this.min / 60 * 100;
+        },
+        secPointer: function() {
+            return this.sec / 60 * 100;
+        }
+    },
+    methods: {
+        count() {
+            this.timeLeft = this.totalTime * 60;
+            this.totalHour = Math.ceil(this.totalTime / 60);
+            var timer = setInterval(function() {
+                this.timeLeft--;
+                if (this.timeLeft < 0) {
+                    clearInterval(timer);
+                }
+                this.hour = Math.floor(this.timeLeft / 3600);
+                this.min = Math.floor(this.timeLeft / 60) % 60;
+                this.sec = this.timeLeft % 60;
+            }.bind(this), 1000);
         }
     }
 }
