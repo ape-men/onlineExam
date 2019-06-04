@@ -15,7 +15,7 @@
 <script>
 import ClassInfo from '@/components/ClassInfo'
 export default {
-    name: 'ClassTabl',
+    name: 'ClassManager',
     components: {
         "class-info": ClassInfo,
     },
