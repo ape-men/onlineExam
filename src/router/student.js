@@ -1,21 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Info from '@/components/Info'
-import CardList from '@/components/CardList'
 import ClassTable from '@/components/ClassTable'
 import ExamTable from '@/components/ExamTable'
 import GradeTable from '@/components/GradeTable'
 import NotifyTimeLine from '@/components/NotifyTimeLine'
-import { Calendar } from 'element-ui';
+import Calendar from '@/components/Calendar';
 
 Vue.use(Router);
 
 export default new Router({
     routes: [
-        {
-            path: '/',
-            redirect: '/examList',
-        },
         {
             path: '/info',
             name: 'Info',
@@ -40,14 +35,6 @@ export default new Router({
             path: '/grade',
             name: 'Grade',
             component: GradeTable,
-        },
-        {
-            path: '/course',
-            name: 'course',
-            component: CardList,
-            props: {
-                currentCard: 'course-card'
-            }
         },
         {
             path: '/calendar',

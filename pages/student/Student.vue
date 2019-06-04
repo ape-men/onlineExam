@@ -3,7 +3,6 @@
     <el-col :span="6" class="aside">
         <el-menu
             ref="sideBar"
-            default-active="2"
             class="el-menu-vertical-demo"
             @select="handleSelect">
             <el-menu-item index="1" router-link="/info">
@@ -13,7 +12,7 @@
             <el-menu-item index="2" router-link="/notify">
                 <i class="el-icon-message"></i>
                 <span slot="title">通知公告<el-dropdown-item class="clearfix" style="float:right;margin-top:12px;">
-      <el-badge class="mark" :value="notify.notify" />
+      <el-badge class="mark" :value="notify.notify" :hidden="confirm.notify"/>
     </el-dropdown-item>
                 </span>
             </el-menu-item>
@@ -25,7 +24,7 @@
                 <i class="el-icon-document"></i>
                 <span slot="title">课程考试
                     <el-dropdown-item class="clearfix" style="float:right;margin-top:12px;">
-                        <el-badge class="mark" :value="notify.examList" />
+                        <el-badge class="mark" :value="notify.examList" :hidden="confirm.examList"/>
                     </el-dropdown-item> 
                 </span>
             </el-menu-item>
@@ -50,6 +49,12 @@ export default {
     name: 'app',
     methods: {
         handleSelect(key, keyPath) {
+            if (key == 2) {
+                this.confirm.notify = true;
+            }
+            if (key == 4) {
+                this.confirm.examList = true;
+            }
             this.$router.push(this.$refs.sideBar.$children[key-1].$el.getAttribute("router-link"));
         },
     },
@@ -58,6 +63,10 @@ export default {
             notify: {
                 notify: 12,
                 examList: 4,
+            },
+            confirm: {
+                notify: false,
+                examList: false,
             }
         }
     }
