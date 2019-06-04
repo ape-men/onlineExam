@@ -301,10 +301,11 @@ export default {
       },
       handleDelete(index, rows) {
         console.log(index, rows);
-         this.$confirm('此操作将删除该记录, 是否继续?', '提示', {
+         this.$prompt('此操作将删除该记录, 是否继续?(在下方在输入一次该内容)', '提示', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',
-          type: 'warning'
+          inputPattern: /此操作将删除该记录, 是否继续?/,
+          inputErrorMessage: '内容错误!',
         }).then(() => {
             rows.splice(index, 1);
           this.$message({
