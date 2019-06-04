@@ -6,26 +6,27 @@
 
 <script>
 export default {
-name: 'Power',
-methods:{
-    doclick(){
-this.$confirm('是否退出登录', '提示', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-          type: 'warning'
-        }).then(() => {
-           window.location.href="/login.html";
-          this.$message({
-            type: 'success',
-            message: '退出成功!'
-          });
-        }).catch(() => {
-          this.$message({
-            type: 'info',
-            message: '已取消退出'
-          });          
-        });}
+    name: 'Power',
+    methods: {
+        doclick(){
+            this.$confirm('是否退出登录', '提示', {
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                type: 'warning'
+            }).then(() => {
+                window.location.href="/login.html";
+                this.$message({
+                    type: 'success',
+                    message: '退出成功!'
+                });
+            }).catch(() => {
+                this.$message({
+                    type: 'info',
+                    message: '已取消退出'
+                });          
+            });
         }
+    }
 }
 </script>
 

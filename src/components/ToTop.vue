@@ -1,7 +1,9 @@
 <template>
-<div class="TOP"><a href="#webTop">
-            <img src="../../src/assets/totop icon.png" width="50px" height="50px" alt="返回顶部" title="返回顶部">
-        </a></div>
+<div class="TOP">
+    <a href="#webTop">
+        <img src="../../src/assets/totop icon.png" width="50px" height="50px" alt="返回顶部" title="返回顶部">
+    </a>
+</div>
 </template>
 
 <script>
@@ -11,7 +13,7 @@ export default {
 </script>
 
 <style>
-    .TOP{
+.TOP{
     position:fixed;
     bottom:0;
     right:0;

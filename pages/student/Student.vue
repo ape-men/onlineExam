@@ -13,7 +13,7 @@
             <el-menu-item index="2" router-link="/notify">
                 <i class="el-icon-message"></i>
                 <span slot="title">通知公告<el-dropdown-item class="clearfix" style="float:right;margin-top:12px;">
-      <el-badge class="mark" :value="12" />
+      <el-badge class="mark" :value="notify.notify" />
     </el-dropdown-item>
                 </span>
             </el-menu-item>
@@ -24,16 +24,16 @@
             <el-menu-item index="4" router-link="/examList">
                 <i class="el-icon-document"></i>
                 <span slot="title">课程考试
-                   <el-dropdown-item class="clearfix" style="float:right;margin-top:12px;">
-      <el-badge class="mark" :value="4" />
-    </el-dropdown-item> 
+                    <el-dropdown-item class="clearfix" style="float:right;margin-top:12px;">
+                        <el-badge class="mark" :value="notify.examList" />
+                    </el-dropdown-item> 
                 </span>
             </el-menu-item>
             <el-menu-item index="5" router-link="/grade">
                 <i class="el-icon-setting"></i>
                 <span slot="title">成绩查询</span>
             </el-menu-item>
-            <el-menu-item index="6" router-link="/calender">
+            <el-menu-item index="6" router-link="/calendar">
                 <i class="el-icon-document"></i>
                 <span slot="title">实时日历</span>
             </el-menu-item>
@@ -52,6 +52,14 @@ export default {
         handleSelect(key, keyPath) {
             this.$router.push(this.$refs.sideBar.$children[key-1].$el.getAttribute("router-link"));
         },
+    },
+    data() {
+        return {
+            notify: {
+                notify: 12,
+                examList: 4,
+            }
+        }
     }
 }
 </script>
