@@ -1,11 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Info from '@/components/Info'
+import ClassManager from '@/components/ClassManager'
 import CardList from '@/components/CardList'
 import ExamPoster from '@/components/ExamPoster'
 import NotifyPoster from '@/components/NotifyPoster'
-// import ExamPoster from '@/components/ExamPoster'
-// import NotifyPoster from '@/components/NotifyPoster'
 
 Vue.use(Router);
 
@@ -25,10 +24,9 @@ export default new Router({
         {
             path: '/class',
             name: 'Class',
-            //component: Class,
-            props: {
-                currentCard: 'grade'
-            }
+            components: {
+                main: ClassManager
+            },
         },
         // {
         //     path: '/questionManager',
