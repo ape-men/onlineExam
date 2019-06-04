@@ -28,7 +28,7 @@ new Vue({
     el: '#clock',
     components: { Clock },
     template: '<Clock/>',
-    prop: {
+    data: {
         totalTime: 3600,
     }
 })
