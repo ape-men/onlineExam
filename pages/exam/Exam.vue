@@ -10,8 +10,8 @@
     <el-form-item>
         <div class="submitalign">
             <div class="submit">
-                <el-button type="primary" @click="onSubmit">提交试卷</el-button>
-                <el-button type="danger">检查</el-button>
+                <el-button type="primary" @click="onSubmit()">提交试卷</el-button>
+                <el-button type="danger" @click="check()">检查</el-button>
             </div>
         </div>
     </el-form-item>
@@ -49,10 +49,10 @@ export default {
     },
     methods: {
         onSubmit() {
-            console.log('submit!');
+            
         },
         fetchData() {
-            this.examName = "2018年普通高等学校招生全国统一考试",
+            this.examName = "cyu",
             this.questionSet = [
                 {
                     type: "SCQ",

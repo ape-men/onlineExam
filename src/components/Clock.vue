@@ -1,9 +1,9 @@
 <template>
 <div>
-    <el-progress type="circle" :show-text="false" :percentage="hourPointer"></el-progress>
-    <el-progress type="circle" :show-text="false" :percentage="minPointer"></el-progress>
-    <el-progress type="circle" :show-text="false" :percentage="secPointer"></el-progress>
-    <span>{{ hour }} : {{ min }} : {{ sec }}</span>
+    <el-progress type="circle" :show-text="false" :percentage="hourPointer" class="t1"></el-progress>
+    <el-progress type="circle" :show-text="false" :percentage="minPointer" class="t2"></el-progress>
+    <el-progress type="circle" :show-text="false" :percentage="secPointer" class="t3"></el-progress>
+    <span class="t4">{{ hour }} : {{ min }} : {{ sec }}</span>
 </div>
 </template>
 
@@ -55,6 +55,24 @@ export default {
 </script>
 
 <style>
+.t1,.t2,.t3,.t4{
+    position:fixed;
+    top: 10px;
+    right:10px;
+    z-index: 1000;
+}
+.t1{
+    width: 50px;
+}
+.t2{
+    width: 40px;
+}
+.t3{
+     width:30px;
+}
+.t2{
+    
+}
 .transition-box {
     margin-bottom: 10px;
     width: 200px;
