@@ -1,9 +1,9 @@
 <template>
 <div>
-    <el-progress type="circle" :show-text="false" :percentage="hourPointer" class="t1"></el-progress>
-    <el-progress type="circle" :show-text="false" :percentage="minPointer" class="t2"></el-progress>
-    <el-progress type="circle" :show-text="false" :percentage="secPointer" class="t3"></el-progress>
-    <span class="t4">{{ hour }} : {{ min }} : {{ sec }}</span>
+    <el-progress v-if="totalTime > 60" type="circle" :show-text="false" color="lightblue" :width="120" :percentage="hourPointer" class="t1"></el-progress>
+    <el-progress type="circle" :show-text="false" color="blue" :width="140" :percentage="minPointer" class="t2"></el-progress>
+    <el-progress type="circle" :show-text="false" color="darkblue" :width="160" :percentage="secPointer" class="t3"></el-progress>
+    <span class="t4">{{ hour }} : {{ min.toString().padStart(2) }} : {{ sec.toString().padStart(2) }}</span>
 </div>
 </template>
 
@@ -57,21 +57,23 @@ export default {
 <style>
 .t1,.t2,.t3,.t4{
     position:fixed;
-    top: 10px;
-    right:10px;
     z-index: 1000;
 }
 .t1{
-    width: 50px;
+    top: 120px;
+    right:120px;
 }
 .t2{
-    width: 40px;
+    top: 110px;
+    right:110px;
 }
 .t3{
-     width:30px;
+    top: 100px;
+    right:100px;
 }
-.t2{
-    
+.t4{
+    top: 165px;
+    right: 145px;
 }
 .transition-box {
     margin-bottom: 10px;

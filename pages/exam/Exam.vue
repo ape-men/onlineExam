@@ -49,29 +49,37 @@ export default {
     },
     methods: {
         onSubmit() {
-            
-        },
+                         this.$alert('试卷已提交,请于6-22登录查询成绩', '成功提交试卷！', {
+          confirmButtonText: '确定',
+          callback: action => {
+              window.location.href="/student.html"
+            this.$message({
+              type: 'success',
+              message: '成功提交试卷!'
+            });
+            }
+        }) },
         fetchData() {
-            this.examName = "cyu",
+            this.examName = "全国高等数学考试",
             this.questionSet = [
                 {
                     type: "SCQ",
-                    question: "已知正方体的棱长为1，每平面所成的角相等，则截此正方体所得截面面积的最大值为（    ）",
+                    question: "已知正方体的棱长为1，每平面所成的角相等，则截此正方体所得截面面积的最大值为（    ）",
                     choices: ["1", "2", "3", "4"],
                 },
                 {
                     type: "MCQ",
-                    question: "已知正方体的棱长为1，每平面所成的角相等，则截此正方体所得截面面积的最大值为（    ）",
+                    question: "已知正方体的棱长为1，每平面所成的角相等，则截此正方体所得截面面积的最大值为（    ）",
                     choices: ["1", "2", "3", "4"],
                 }, {
                     type: "SAQ",
                     question: "从2位女生，4位男生中选3人参加科技比赛，且至少有1位女生入选，则不同的选法共有_____________种。（用数字填写答案）",
                 }, {
                     type: "SAQ",
-                    question: "记nS为数列na的前n项和，若21nnSa，则6S_____________。",
+                    question: "记nS为数列na的前n项和，若21nnSa，则6S_____________。",
                 }, {
                     type: "SAQ",
-                    question: "已知函数2sinsin2fxxx，则fx的最小值是__________。",
+                    question: "已知函数2sinsin2fxxx，则fx的最小值是__________。",
                 }, {
                     type: "SAQ",
                     question: "某工厂的某种产品成箱包装，每箱200件，每一箱产品在交付用户之前要对产品作检验，如检验出不合格品，则更换为合格品。检验时，先从这箱产品中任取20件作检验，再根据所有产品作检验",
