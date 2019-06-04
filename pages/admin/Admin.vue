@@ -286,30 +286,31 @@ export default {
         newinfo(index,rows){
             
         },
-        handleClick(tab, event) {
-        },
-        handleEdit(index, row) {
-            console.log(index, row);
-        },
-        handleDelete(index, rows) {
-            console.log(index, rows);
-            this.$confirm('此操作将删除该记录, 是否继续?', '提示', {
-                confirmButtonText: '确定',
-                cancelButtonText: '取消',
-                type: 'warning'
-            }).then(() => {
-                rows.splice(index, 1);
-                this.$message({
-                    type: 'success',
-                    message: '删除成功!'
-                });
-            }).catch(() => {
-                this.$message({
-                    type: 'info',
-                    message: '已取消删除'
-                });
-            });
-        }
+      handleClick(tab, event) {
+      },
+      handleEdit(index, row) {
+        console.log(index, row);
+      },
+      handleDelete(index, rows) {
+        console.log(index, rows);
+         this.$prompt('此操作将删除该记录, 是否继续?(在下方在输入一次该内容)', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          inputPattern: /此操作将删除该记录, 是否继续?/,
+          inputErrorMessage: '内容错误!',
+        }).then(() => {
+            rows.splice(index, 1);
+          this.$message({
+            type: 'success',
+            message: '删除成功!'
+          });
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          });          
+        });
+      }
     }
 }
 </script>
