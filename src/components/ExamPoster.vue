@@ -43,10 +43,10 @@
                 <br/>
                 <el-input-number v-if="form.period" v-model="form.time" :step="10" :min="0"></el-input-number>
             </el-form-item>
-            <el-form-item label="rua">
+            <el-form-item label="正式考试">
                 <el-switch v-model="form.period"></el-switch>
             </el-form-item>
-            <el-form-item v-if="form.period" label="可考次数">
+            <el-form-item v-if="!form.period" label="可考次数">
                 <el-input-number v-model="form.chance" :min="0"></el-input-number>
             </el-form-item>
             <el-form-item label="考试总分">

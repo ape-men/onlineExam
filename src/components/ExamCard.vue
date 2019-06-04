@@ -5,7 +5,7 @@
                 <a v-bind:href="info.examAddress">
                     <span class="examName">【{{ info.courseName }}】{{ info.examName }}</span>
                 </a>
-                <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                <el-button style="float: right; padding: 3px 0" type="text">修改</el-button>
             </div>
             <ul class="info">
                 <li>课程名称<span>{{ info.courseName }}</span></li>

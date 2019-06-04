@@ -5,9 +5,9 @@
         v-bind:key="index"
         :title="paperInfo.name"
         :name="index.toString()">
-        <class-info
+        <paper-info
             v-bind:info="paperInfo">
-        </class-info>
+        </paper-info>
     </el-collapse-item>
 </el-collapse>
 </template>
@@ -15,9 +15,9 @@
 <script>
 import PaperInfo from '@/components/ClassInfo'
 export default {
-    name: 'ClassTabl',
+    name: 'PaperManager',
     components: {
-        "class-info": ClassInfo,
+        "paper-info": PaperInfo,
     },
     created() {
         this.fetchData();
